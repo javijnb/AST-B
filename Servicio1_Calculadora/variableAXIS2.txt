@@ -1,3 +1,0 @@
- 
-AXIS2_HOME=/home/javi/axis2-1.7.9
-export AXIS2_HOME
