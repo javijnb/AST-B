@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.9  Built on : Nov 16, 2018 (12:05:37 GMT) -->
+<serviceGroup>
+    <service name="Noticia">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="noticia.NoticiaMessageReceiverInOnly"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="noticia.NoticiaMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">noticia.NoticiaSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getTitular" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Noticia">
+            <actionMapping>urn:getTitular</actionMapping>
+            <outputActionMapping>urn:getTitularResponse</outputActionMapping>
+        </operation>
+        <operation name="setTitular" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Noticia">
+            <actionMapping>urn:setTitular</actionMapping>
+        </operation>
+        <operation name="setDescripcion" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Noticia">
+            <actionMapping>urn:setDescripcion</actionMapping>
+        </operation>
+        <operation name="getDescripcion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Noticia">
+            <actionMapping>urn:getDescripcion</actionMapping>
+            <outputActionMapping>urn:getDescripcionResponse</outputActionMapping>
+        </operation>
+        <operation name="getUrl" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://Noticia">
+            <actionMapping>urn:getUrl</actionMapping>
+            <outputActionMapping>urn:getUrlResponse</outputActionMapping>
+        </operation>
+        <operation name="setUrl" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://Noticia">
+            <actionMapping>urn:setUrl</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>

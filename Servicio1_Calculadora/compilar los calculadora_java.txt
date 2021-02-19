@@ -1,0 +1,3 @@
+cd /home/javi/apache-tomcat-9.0.43/webapps/axis2/WEB-INF/pojo 
+javac -cp "/home/javi/axis2-1.7.9/lib/*" *.java
+java  -cp "/home/javi/axis2-1.7.9/lib/*:" ClienteCalculadora OPERACION numero1 numero2

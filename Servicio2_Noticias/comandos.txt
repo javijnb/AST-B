@@ -1,0 +1,3 @@
+./wsdl2java.sh -uri /home/javi/Escritorio/ServicioNoticias/Noticia.wsdl -ss -sd -d xmlbeans -o /home/javi/Escritorio/ServicioNoticias
+ant donde esté el build.xml
+javac -cp "/opt/axis2-1.7.9/lib/*:.." ClienteNoticias.java
