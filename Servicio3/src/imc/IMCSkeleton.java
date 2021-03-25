@@ -66,11 +66,6 @@ public class IMCSkeleton {
             e.printStackTrace();
         }
 
-        //Llamar aquí al servicio de noticias
-        // Mandar nombre como Titulo
-        // Mandar fecha como Descripcion
-        // Mandar IMC como URL
-
         respuesta.set_return(IMC);
         return respuesta;
     }
