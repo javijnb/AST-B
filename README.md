@@ -69,4 +69,35 @@ Compilamos el cliente y comprobamos su correcto funcionamiento:
 
 ***SERVICIO 3 - PERSONALIZADO***
 
+Nuevo servicio que conecta con una API abierta: `https://english.api.rakuten.net/SharkAPIs/api/body-mass-index-bmi-calculator/endpoints`
+La API devuelve en un objeto JSON el IMC pasandole por parámetros altura y peso en formato float
+
+Escribimos el código pertinente del servicio en el fichero `imc.wsdl`
+Posteriormente generamos el código Java del servicio con el siguiente comando donde se encuentre el fichero WSDL (si está AXIS2/bin como variable de entorno):
+
+> wsdl2java.sh -ss -sd -g -s -uri imc.wsdl
+
+Escribimos el código necesario en IMCSkeleton para conectar con la API, una vez finalizado, lo compilamos:
+
+> javac -cp "/home/javi/axis2-1.7.9/lib/*" *.java
+
+Si no da errores y estamos seguros de su correcto funcionamiento, generamos su archivo .aar para incrustarlo como servico en nuestro Axis2:
+
+> ant
+
+Y lo movemos a la carpeta de servicios de nuestro Axis2:
+
+> /home/javi/apache-tomcat-9.0.43/webapps/axis2/WEB-INF/services/
+
+Por último escribimos el código del cliente. Simula una interfaz en la que se pide el IMC del cliente a partir de una altura y peso introducidos por él.
+A continuación se llama al servicio IMC para calcular dicho valor, y luego se conecta con el servicio Noticia para ofrecer una "noticia" a modo de parte médico con la información introducida.
+Para compilar y ejecutar el cliente:
+
+> javac -cp "/home/javi/axis2-1.7.9/lib/*" *.java
+
+> java -cp "/home/javi/axis2-1.7.9/lib/*" ClienteNoticias.java
+
+
+
+
 
