@@ -95,7 +95,7 @@ Para compilar y ejecutar el cliente:
 
 > javac -cp "/home/javi/axis2-1.7.9/lib/*" *.java
 
-> java -cp "/home/javi/axis2-1.7.9/lib/*" ClienteNoticias.java
+> java -cp "/home/javi/axis2-1.7.9/lib/*" ClienteIMC.java
 
 
 
