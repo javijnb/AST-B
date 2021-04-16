@@ -69,7 +69,7 @@ Compilamos el cliente y comprobamos su correcto funcionamiento:
 
 ***SERVICIO 3 - PERSONALIZADO***
 
-Nuevo servicio que conecta con una API abierta: `https://english.api.rakuten.net/SharkAPIs/api/body-mass-index-bmi-calculator/endpoints`
+Nuevo servicio que conecta con una API abierta: [https://english.api.rakuten.net/SharkAPIs/api/body-mass-index-bmi-calculator/endpoints]
 La API devuelve en un objeto JSON el IMC,pasándole por parámetros altura y peso en formato float
 
 Escribimos el código pertinente del servicio en el fichero `imc.wsdl`
