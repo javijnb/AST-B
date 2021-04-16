@@ -1,5 +1,5 @@
 # AST
-Arquitectura y tecnología de redes
+Arquitectura y servicios telemáticos
 
 ***VARIABLES DE ENTORNO***
 
